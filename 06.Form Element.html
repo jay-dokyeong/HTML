@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>폼 엘리먼트</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>  <!-- 전체 네모칸을 만드는 역할 -->
+            <legend>개인정보</legend>       <!-- fieldset과 같이 쓰이는 타이틀을 주는 녀석 -->
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required><br>       <!-- input은 항상 form 태그 안에 있어야 한다. -->
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd" required><br>
+            <label for="birthday">birthday</label>
+            <input type="date" name="birthday" id="birthday"><br>       <!-- 날짜에 대한 정보를 받을 수 있는... -->
+            <label for="birthdaytime">birthday (day and time)</label>
+            <input type="datetime-local" name="birthdaytime" id="birthdaytime"> <br>    <!-- 날짜와 시간까지 받을 수 있는... -->
+            <label for="email">Enter your Email</label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="myfile">Select file</label>
+            <input type="file" name="myfile" id="myfile" multiple><br> <!-- 파일 첨부 할 때, multiple을 사용하면 여러개 가능하다. -->
+            
+            <input type="hidden" name="guest" value="1234"> <!-- 화면상에서는 보이지 않는데, 전송된 데이터에는 포함시키고 싶을 때 -->
+        </fieldset>
+        <input type="submit" value="제출">
+        <input type="reset" value="리셋">
+    </form>
+</body>
+</html>
